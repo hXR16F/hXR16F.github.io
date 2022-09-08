@@ -1417,9 +1417,13 @@ button:focus {
 @media (max-width: 767px) {
   .element-wrap {
     margin-top: 30px; } }
-b, sup, sub, u, del {
+b, u, del, sup, sub{
   color: #f8b600; }
 
+#aw {
+  color: #bbbbbb;
+  font-weight: 400;
+  font-size: 16px;}
 h1 {
   font-size: 36px; }
 
