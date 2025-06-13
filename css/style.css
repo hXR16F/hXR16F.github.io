@@ -101,7 +101,7 @@ button:focus {
 
 .pad_c {
   padding-top: 100px;
-  padding-bottom: 180px; }
+  padding-bottom: 150px; }
 
 .mt-25 {
   margin-top: 25px; }
@@ -316,9 +316,9 @@ button:focus {
   background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
   background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
   background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  margin-bottom: 200px; }
+  margin-bottom: 120px; }
   .home_banner_area .box_1620 {
-    min-height: 500px;
+    min-height: 550px;
     border-radius: 12px;
     position: relative;
     bottom: -100px;
@@ -329,7 +329,7 @@ button:focus {
   .home_banner_area .banner_inner {
     position: relative;
     width: 100%;
-    min-height: 500px;
+    min-height: 550px;
     display: flex; }
     .home_banner_area .banner_inner .banner_content {
       color: #222222;
