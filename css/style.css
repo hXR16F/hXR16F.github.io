@@ -680,12 +680,6 @@ footer {
     transform: translateY(0);
 }
 
-@media (max-width: 480px) {
-    .nav-links {
-        display: none;
-    }
-}
-
 @media (max-width: 800px) {
     .main-card {
         grid-template-columns: 1fr;
@@ -695,5 +689,14 @@ footer {
     .about-grid {
         grid-template-columns: 1fr;
         gap: 2.5rem;
+    }
+}
+
+@media (max-width: 440px) {
+    nav {
+        display: none;
+    }
+    .main-card {
+        padding: 40px 0 60px;
     }
 }
