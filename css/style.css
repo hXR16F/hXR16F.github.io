@@ -87,6 +87,14 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 0 clamp(1.5rem, 5vw, 4rem);
+    background: transparent;
+    transition:
+        background 0.2s ease,
+        border-bottom 0.2s ease;
+    border-bottom: 1px solid transparent;
+}
+
+nav.nav-scrolled {
     background: rgba(8, 8, 10, 0.75);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
@@ -106,7 +114,7 @@ nav {
 .nav-links {
     display: flex;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 1rem;
     list-style: none;
 }
 
@@ -116,6 +124,7 @@ nav {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--muted);
+    padding: 12px;
     transition:
         color 0.2s ease,
         text-shadow 0.2s ease;

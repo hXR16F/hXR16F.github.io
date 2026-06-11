@@ -321,6 +321,17 @@
             <span class="ft">Made with <span class="heart">&#x2764;</span> by zaktabyte</span>
         </footer>
 
+        <script>
+            const nav = document.querySelector("nav");
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add("nav-scrolled");
+                } else {
+                    nav.classList.remove("nav-scrolled");
+                }
+            });
+        </script>
+
         <script src="js/clipboard.min.js"></script>
         <script>
             const discordUsername = document.getElementById("discord_username");
