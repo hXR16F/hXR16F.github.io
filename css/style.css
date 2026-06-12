@@ -11,6 +11,7 @@
     --bg1: #0e0e12;
     --bg2: #14141a;
     --bg3: #1c1c24;
+    --darken: rgba(8, 8, 10, 0.75);
     --line: rgba(255, 255, 255, 0.06);
     --line2: rgba(255, 255, 255, 0.15);
     --text: #f0ede6;
@@ -44,6 +45,7 @@ body {
     font-size: 15px;
     line-height: 1.65;
     overflow-x: hidden;
+    min-width: 420px;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -56,6 +58,7 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
 a:focus-visible {
     outline: 1px solid var(--accent);
     outline-offset: 4px;
@@ -64,14 +67,17 @@ a:focus-visible {
 ::-webkit-scrollbar {
     width: 6px;
 }
+
 ::-webkit-scrollbar-track {
     background: var(--bg);
 }
+
 ::-webkit-scrollbar-thumb {
     background: var(--bg3);
     border-radius: 0;
     transition: background 0.2s ease;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: var(--line2);
 }
@@ -95,20 +101,10 @@ nav {
 }
 
 nav.nav-scrolled {
-    background: rgba(8, 8, 10, 0.75);
+    background: var(--darken);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--line);
-}
-
-@keyframes blink {
-    0%,
-    100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
 }
 
 .nav-links {
@@ -116,15 +112,20 @@ nav.nav-scrolled {
     justify-content: center;
     gap: 1rem;
     list-style: none;
+    height: 56px;
+    align-items: stretch;
 }
 
 .nav-links a {
+    display: flex;
+    align-items: center;
+    height: 100%;
     font-family: var(--mono);
     font-size: 0.75rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--muted);
-    padding: 12px;
+    padding: 0 12px;
     transition:
         color 0.2s ease,
         text-shadow 0.2s ease;
@@ -143,7 +144,6 @@ nav.nav-scrolled {
 
 .main-card {
     padding: 160px 0 90px;
-    border-bottom: 1px solid var(--line);
 }
 
 .main-card-label {
@@ -220,6 +220,7 @@ nav.nav-scrolled {
     font-weight: 600;
     box-shadow: 0 0 0 0px var(--text);
 }
+
 .btn-solid:hover {
     background: var(--accent);
     color: var(--bg);
@@ -232,6 +233,7 @@ nav.nav-scrolled {
     color: var(--muted2);
     border: 1px solid var(--line2);
 }
+
 .btn-outline:hover {
     border-color: var(--accent);
     color: var(--text);
@@ -240,14 +242,15 @@ nav.nav-scrolled {
 }
 
 section {
-    padding: clamp(4rem, 8vw, 7rem) 0;
-    border-bottom: 1px solid var(--line);
+    padding: clamp(4rem, 8vw, 6rem) 0;
+    /*border-bottom: 1px solid var(--line);*/
 }
 
 .sec-hd {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 3.5rem;
 }
 
@@ -306,7 +309,7 @@ section {
     background: transparent;
     border: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
     gap: 0.75rem;
     width: 100%;
 }
@@ -376,6 +379,7 @@ section {
 .stack-group {
     margin-bottom: 3rem;
 }
+
 .stack-group:last-child {
     margin-bottom: 0;
 }
@@ -412,7 +416,7 @@ section {
     background: var(--bg2);
     border-color: var(--line2);
     color: var(--text);
-    transform: translateY(-2px);
+    /*transform: translateY(-2px);*/
 }
 
 .pill.loved {
@@ -608,12 +612,16 @@ section {
 
 footer {
     padding: 0 clamp(1.5rem, 5vw, 4rem);
+    margin-top: clamp(4rem, 8vw, 6rem);
     border-top: 1px solid var(--line);
     height: 56px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background: var(--darken);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 }
 
 .ft {
@@ -625,7 +633,7 @@ footer {
     text-transform: uppercase;
 }
 
-.ft:hover .heart {
+footer:hover .heart {
     color: var(--muted);
 }
 
@@ -648,15 +656,19 @@ footer {
 .main-card-label {
     animation: up 0.5s ease 0.05s both;
 }
+
 .main-card-name {
     animation: up 0.6s ease 0.12s both;
 }
+
 .main-card-sub {
     animation: up 0.5s ease 0.2s both;
 }
+
 .main-card-bio {
     animation: up 0.5s ease 0.26s both;
 }
+
 .main-card-btns {
     animation: up 0.5s ease 0.33s both;
 }
@@ -668,6 +680,7 @@ footer {
         opacity 0.5s ease,
         transform 0.5s ease;
 }
+
 .fade.in {
     opacity: 1;
     transform: translateY(0);
@@ -679,11 +692,12 @@ footer {
     }
 }
 
-@media (max-width: 470px) {
-    nav {
-        display: none;
+@media (max-width: 680px) {
+    .nav-links {
+        gap: 0;
     }
-    .main-card {
-        padding: 50px 0 60px;
+
+    .nav-links a {
+        padding: 0 10px;
     }
 }
