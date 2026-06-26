@@ -146,19 +146,6 @@ nav.nav-scrolled {
     padding: 160px 0 90px;
 }
 
-.main-card-label {
-    color: var(--accent);
-    margin-bottom: 2rem;
-    display: flex;
-}
-
-.main-card-label::before {
-    content: "";
-    width: 24px;
-    height: 1px;
-    background: var(--accent);
-}
-
 .main-card-name {
     font-family: var(--heading);
     font-size: clamp(3rem, 6.5vw, 5.5rem);
@@ -167,6 +154,7 @@ nav.nav-scrolled {
     letter-spacing: -0.04em;
     color: var(--text);
     margin-bottom: 1.5rem;
+    margin-top: 2rem;
 }
 
 .main-card-name .hl {
@@ -653,10 +641,6 @@ footer:hover .heart {
     }
 }
 
-.main-card-label {
-    animation: up 0.5s ease 0.05s both;
-}
-
 .main-card-name {
     animation: up 0.6s ease 0.12s both;
 }
@@ -686,7 +670,7 @@ footer:hover .heart {
     transform: translateY(0);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .main-card {
         padding: 100px 0 60px;
     }
@@ -699,5 +683,9 @@ footer:hover .heart {
 
     .nav-links a {
         padding: 0 10px;
+    }
+
+    .main-card-name {
+        margin-top: 0;
     }
 }
