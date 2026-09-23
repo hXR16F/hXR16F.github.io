@@ -1,466 +1,428 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>zaktabyte</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Main</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#stack">stack</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#mentions">mentions</a></li>
-            </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zaktabyte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Main</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#mentions">Mentions</a></li>
+    </ul>
+  </nav>
 
-        <div class="wrap">
-            <header class="main-card">
-                <div>
-                    <h1 class="main-card-name">zakta<span class="hl">byte</span></h1>
-                    <p class="main-card-sub">// also known as hXR16F</p>
-                    <p class="main-card-bio">
-                        Tech enthusiast and self-taught hobbyist programmer. <strong>I wrote my first lines of code at the age of 9</strong> and never stopped. I specialize in developing custom
-                        solutions, automating complex processes to improve efficiency and productivity, and exploring the depths of cybersecurity through research and practical application.
-                    </p>
-                    <div class="main-card-btns">
-                        <a href="https://github.com/hXR16F" class="btn btn-solid" target="_blank" rel="noopener">↗ Explore my Creations</a>
-                        <a href="mailto:hxr16f.ar@gmail.com" class="btn btn-outline">→ Send me a message</a>
-                    </div>
-                </div>
-            </header>
-
-            <section id="about" class="fade">
-                <div class="sec-hd">
-                    <span class="sec-n">//</span>
-                    <h2 class="sec-t">About Me</h2>
-                    <div class="sec-line"></div>
-                </div>
-                <div class="about-text">
-                    <p>
-                        Hi — I'm a <strong>hobbyist programmer and tech enthusiast</strong> from Poland. I picked up coding at age 9 out of pure curiosity, and it turned into an obsession.
-                    </p>
-                    <p>
-                        Most of my work is open source and lives on GitHub where repositories have
-                        <strong>accumulated over 200 stars</strong>. My projects have even garnered attention from security researchers at
-                        <a href="https://www.zscaler.com/" target="_blank"><strong>Zscaler</strong></a> and
-                        <a href="https://securityboulevard.com/" target="_blank"><strong>SecurityBoulevard</strong></a>.
-                        Additionally, several of my repositories have been preserved in the <a href="https://archiveprogram.github.com/arctic-vault/" target="_blank"><strong>GitHub Arctic Code Vault</strong></a>.
-                    </p>
-                    <p>
-                        I maintain a homelab using an <strong>HP Prodesk 600 G3 SFF</strong>, running Proxmox with services like Pi-hole, n8n, MCP servers and more.
-                    </p>
-                    <p>
-                        In my free time, I actively participate in cybersecurity challenges at <a href="https://tryhackme.com/" target="_blank"><strong>TryHackMe</strong></a>, where <strong>I'm ranked in the Top 1% globally</strong>.
-                    </p>
-                    <p>
-                        Also, I became a semi-finalist at the <a href="https://www.pixblocks.com/pixchallenge" target="_blank"><strong>Pix Programming Challenge</strong></a> on "Master" difficulty in 2020.
-                    </p>
-                </div>
-                <div class="contact-card">
-                    <a href="mailto:hxr16f.ar@gmail.com" class="contact-row">
-                        <span class="cr-platform">Email</span>
-                        <span class="cr-val">hxr16f.ar@gmail.com</span>
-                        <span class="cr-arrow">↗</span>
-                    </a>
-                    <div class="contact-row" id="discord_username" data-clipboard-text=".zaktabyte">
-                        <span class="cr-platform">Discord</span>
-                        <span class="cr-val">.zaktabyte</span>
-                        <span class="cr-arrow">↗</span>
-                    </div>
-                    <a href="https://github.com/hXR16F" class="contact-row" target="_blank">
-                        <span class="cr-platform">GitHub</span>
-                        <span class="cr-val">github.com/hXR16F</span>
-                        <span class="cr-arrow">↗</span>
-                    </a>
-                    <a href="https://tryhackme.com/p/zaktabyte" class="contact-row" target="_blank">
-                        <span class="cr-platform">TryHackMe</span>
-                        <span class="cr-val">tryhackme.com/p/zaktabyte</span>
-                        <span class="cr-arrow">↗</span>
-                    </a>
-                    <a href="https://llamalab.com/automate/community/?q=hXR16F" class="contact-row" target="_blank">
-                        <span class="cr-platform">Automate</span>
-                        <span class="cr-val">llamalab.com/automate/community/?q=hXR16F</span>
-                        <span class="cr-arrow">↗</span>
-                    </a>
-                    <a href="https://www.youtube.com/c/hXR16F" class="contact-row" target="_blank">
-                        <span class="cr-platform">YouTube</span>
-                        <span class="cr-val">youtube.com/c/hXR16F</span>
-                        <span class="cr-arrow">↗</span>
-                    </a>
-                </div>
-            </section>
-
-            <section id="stack" class="fade">
-                <div class="sec-hd">
-                    <span class="sec-n">//</span>
-                    <h2 class="sec-t">Technology Stack</h2>
-                    <div class="sec-line"></div>
-                </div>
-
-                <div class="stack-group">
-                    <div class="stack-group-label">Programming languages</div>
-                    <div class="stack-pills">
-                        <span class="pill loved">Python &#x2764;</span>
-                        <span class="pill">HTML</span>
-                        <span class="pill">CSS</span>
-                        <span class="pill">JavaScript</span>
-                        <span class="pill loved">Batch &#x2764;</span>
-                        <span class="pill">AutoIt</span>
-                        <span class="pill">Lua</span>
-                        <span class="pill">SQL</span>
-                    </div>
-                </div>
-
-                <div class="stack-group">
-                    <div class="stack-group-label">Environments, hardware, frameworks, libraries, tools, etc.</div>
-                    <div class="stack-pills">
-                        <span class="pill loved">Linux &#x2764;</span>
-                        <span class="pill">Windows</span>
-                        <span class="pill">Proxmox</span>
-                        <span class="pill">VirtualBox</span>
-                        <span class="pill">Docker</span>
-                        <span class="pill loved">Raspberry Pi &#x2764;</span>
-                        <span class="pill">Arduino</span>
-                        <span class="pill">ESP32</span>
-                        <span class="pill">ESP8266</span>
-                        <span class="pill loved">Mikr.us &#x2764;</span>
-                        <span class="pill">Cloudflare</span>
-                        <span class="pill">Flask</span>
-                        <span class="pill">Selenium</span>
-                        <span class="pill">PyAutoGUI</span>
-                        <span class="pill">PyQt6</span>
-                        <span class="pill">Tkinter</span>
-                        <span class="pill">Tailwind</span>
-                        <span class="pill loved">Zed &#x2764;</span>
-                        <span class="pill loved">Tmux &#x2764;</span>
-                        <span class="pill">LM Studio</span>
-                        <span class="pill">Git</span>
-                        <span class="pill">Regex</span>
-                        <span class="pill">Cheat Engine</span>
-                        <span class="pill loved">Nmap &#x2764;</span>
-                        <span class="pill">Wireshark</span>
-                        <span class="pill">Burp Suite</span>
-                        <span class="pill">Metasploit</span>
-                        <span class="pill">THC-Hydra</span>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects" class="fade">
-                <div class="sec-hd">
-                    <span class="sec-n">//</span>
-                    <h2 class="sec-t">Featured Projects</h2>
-                    <div class="sec-line"></div>
-                </div>
-                <div class="projects-grid">
-                    <a href="https://1000420.xyz/" class="proj-card" target="_blank" rel="noopener">
-                        <div class="proj-top">
-                            <div class="proj-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    aria-hidden="true"
-                                    role="img"
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 48 48"
-                                >
-                                    <defs>
-                                        <mask id="iconifyReact2335">
-                                            <g fill="none" stroke="#fff" stroke-width="4">
-                                                <path stroke-linecap="round" d="M12 4h24"></path>
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="m10.777 30l7.242-14.961V4h12.01v11.039L37.245 30"></path>
-                                                <path
-                                                    fill="#555"
-                                                    stroke-linejoin="round"
-                                                    d="M7.794 43.673a3.273 3.273 0 0 1-1.52-4.372L10.777 30S18 35 24 30s13.246 0 13.246 0l4.49 9.305A3.273 3.273 0 0 1 38.787 44H9.22c-.494 0-.981-.112-1.426-.327Z"
-                                                ></path>
-                                            </g>
-                                        </mask>
-                                    </defs>
-                                    <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#iconifyReact2335)"></path>
-                                </svg>
-                            </div>
-                            <div class="proj-meta">
-                                <span class="proj-arrow">↗</span>
-                            </div>
-                        </div>
-                        <div class="proj-title">1000420.xyz</div>
-                        <div class="proj-desc">Playful digital experimentation platform that offers interactive tools for users to enjoy and use.</div>
-                        <div class="proj-tags">
-                            <span class="proj-tag">Python</span>
-                            <span class="proj-tag extra">Flask</span>
-                            <span class="proj-tag extra">API</span>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/hXR16F/PocketRecon-AI" class="proj-card" target="_blank" rel="noopener">
-                        <div class="proj-top">
-                            <div class="proj-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    aria-hidden="true"
-                                    role="img"
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                        <path d="M12 5a3 3 0 1 0-5.997.125a4 4 0 0 0-2.526 5.77a4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
-                                        <path
-                                            d="M9 13a4.5 4.5 0 0 0 3-4M6.003 5.125A3 3 0 0 0 6.401 6.5m-2.924 4.396a4 4 0 0 1 .585-.396M6 18a4 4 0 0 1-1.967-.516M12 13h4m-4 5h6a2 2 0 0 1 2 2v1M12 8h8m-4 0V5a2 2 0 0 1 2-2"
-                                        ></path>
-                                        <circle cx="16" cy="13" r=".5"></circle>
-                                        <circle cx="18" cy="3" r=".5"></circle>
-                                        <circle cx="20" cy="21" r=".5"></circle>
-                                        <circle cx="20" cy="8" r=".5"></circle>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="proj-meta">
-                                <span class="proj-arrow">↗</span>
-                            </div>
-                        </div>
-                        <div class="proj-title">PocketRecon-AI</div>
-                        <div class="proj-desc">Lightweight MCP server for local AI-powered cybersecurity reconnaissance.</div>
-                        <div class="proj-tags">
-                            <span class="proj-tag">Python</span>
-                            <span class="proj-tag extra">MCP</span>
-                            <span class="proj-tag extra">Cybersecurity</span>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/hXR16F/AntiAV" class="proj-card" target="_blank" rel="noopener">
-                        <div class="proj-top">
-                            <div class="proj-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    aria-hidden="true"
-                                    role="img"
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 256 256"
-                                >
-                                    <path
-                                        fill="currentColor"
-                                        d="M136 108a28 28 0 1 0-28 28a28 28 0 0 0 28-28m-28 12a12 12 0 1 1 12-12a12 12 0 0 1-12 12m68-8a16 16 0 1 1-16 16a16 16 0 0 1 16-16m-32 64a16 16 0 1 1-16-16a16 16 0 0 1 16 16m96-56h-16.34a95.52 95.52 0 0 0-22.39-53.95l12.39-12.39a8 8 0 0 0-11.32-11.32L190 54.73a95.52 95.52 0 0 0-54-22.39V16a8 8 0 0 0-16 0v16.34a95.52 95.52 0 0 0-53.95 22.39L53.66 42.34a8 8 0 0 0-11.32 11.32l12.39 12.39a95.52 95.52 0 0 0-22.39 54H16a8 8 0 0 0 0 16h16.34A95.52 95.52 0 0 0 54.73 190l-12.39 12.34a8 8 0 0 0 11.32 11.32l12.39-12.39a95.52 95.52 0 0 0 54 22.39V240a8 8 0 0 0 16 0v-16.34A95.52 95.52 0 0 0 190 201.27l12.39 12.39a8 8 0 0 0 11.32-11.32L201.27 190a95.52 95.52 0 0 0 22.39-54H240a8 8 0 0 0 0-16m-112 88a80 80 0 1 1 80-80a80.09 80.09 0 0 1-80 80"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <div class="proj-meta">
-                                <span class="proj-arrow">↗</span>
-                            </div>
-                        </div>
-                        <div class="proj-title">AntiAV</div>
-                        <div class="proj-desc">Making any file undetectable using obfuscation methods.</div>
-                        <div class="proj-tags">
-                            <span class="proj-tag">Batch</span>
-                            <span class="proj-tag extra">Cybersecurity</span>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/hXR16F/stealth-fingerprinter" class="proj-card" target="_blank" rel="noopener">
-                        <div class="proj-top">
-                            <div class="proj-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    aria-hidden="true"
-                                    role="img"
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path fill="currentColor"
-                                        d="M6 23H3q-.825 0-1.412-.587T1 21v-3h2v3h3zm12 0v-2h3v-3h2v3q0 .825-.587 1.413T21 23zm-6-4.5q-3 0-5.437-1.775T3 12q1.125-2.95 3.563-4.725T12 5.5t5.438 1.775T21 12q-1.125 2.95-3.562 4.725T12 18.5m0-3q1.45 0 2.475-1.025T15.5 12t-1.025-2.475T12 8.5T9.525 9.525T8.5 12t1.025 2.475T12 15.5m0-2q-.625 0-1.062-.437T10.5 12t.438-1.062T12 10.5t1.063.438T13.5 12t-.437 1.063T12 13.5M1 6V3q0-.825.588-1.412T3 1h3v2H3v3zm20 0V3h-3V1h3q.825 0 1.413.588T23 3v3z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="proj-meta">
-                                <span class="proj-arrow">↗</span>
-                            </div>
-                        </div>
-                        <div class="proj-title">Stealth-Fingerprinter</div>
-                        <div class="proj-desc">Advanced URL-based tracking system with obfuscation and endpoint management.</div>
-                        <div class="proj-tags">
-                            <span class="proj-tag">Python</span>
-                            <span class="proj-tag extra">Flask</span>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/hXR16F/progress-bar" class="proj-card" target="_blank" rel="noopener">
-                        <div class="proj-top">
-                            <div class="proj-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    aria-hidden="true"
-                                    role="img"
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 16 16"
-                                >
-                                    <path
-                                        fill="currentColor"
-                                        fill-rule="evenodd"
-                                        d="M4 5.5h8a2.5 2.5 0 0 1 0 5H4a2.5 2.5 0 0 1 0-5M0 8a4 4 0 0 1 4-4h8a4 4 0 0 1 0 8H4a4 4 0 0 1-4-4m4-1a1 1 0 0 0 0 2h5a1 1 0 0 0 0-2z"
-                                        clip-rule="evenodd"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <div class="proj-meta">
-                                <span class="proj-arrow">↗</span>
-                            </div>
-                        </div>
-                        <div class="proj-title">Progress-Bar</div>
-                        <div class="proj-desc">Fancy &amp; customizable progress bar for batch scripts with feedback upon completion.</div>
-                        <div class="proj-tags">
-                            <span class="proj-tag">Batch</span>
-                            <span class="proj-tag extra">Utility</span>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/hXR16F/OmegleBOT" class="proj-card" target="_blank" rel="noopener">
-                        <div class="proj-top">
-                            <div class="proj-icon">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    aria-hidden="true"
-                                    role="img"
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path
-                                        fill="currentColor"
-                                        d="M9 15a1 1 0 1 0 1 1a1 1 0 0 0-1-1m-7-1a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1m20 0a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1m-5-7h-4V5.72A2 2 0 0 0 14 4a2 2 0 0 0-4 0a2 2 0 0 0 1 1.72V7H7a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3m-3.28 2l-.5 2h-2.44l-.5-2ZM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1.22L9 12.24a1 1 0 0 0 1 .76h4a1 1 0 0 0 1-.76L15.78 9H17a1 1 0 0 1 1 1Zm-3-4a1 1 0 1 0 1 1a1 1 0 0 0-1-1"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <div class="proj-meta">
-                                <span class="proj-arrow">↗</span>
-                            </div>
-                        </div>
-                        <div class="proj-title">OmegleBOT</div>
-                        <div class="proj-desc">Automating interactions on Omegle using Selenium.</div>
-                        <div class="proj-tags">
-                            <span class="proj-tag">Python</span>
-                            <span class="proj-tag extra">Selenium</span>
-                            <span class="proj-tag extra">Automation</span>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
-            <section id="mentions" class="fade">
-                <div class="sec-hd">
-                    <span class="sec-n">//</span>
-                    <h2 class="sec-t">Featured In</h2>
-                    <div class="sec-line"></div>
-                </div>
-                <div class="mentions-list">
-                    <a href="https://x.com/nixcraft/status/1419969356243476483" class="mention" target="_blank" rel="noopener">
-                        <span class="m-n">01</span>
-                        <span class="m-url">x.com/nixcraft — Ported version of "screenfetch" from Linux</span>
-                        <span class="m-arr">↗</span>
-                    </a>
-                    <a href="https://rutube.ru/video/6c6d483aa7006bef6770933a69300218/" class="mention" target="_blank" rel="noopener">
-                        <span class="m-n">02</span>
-                        <span class="m-url">rutube.ru — Finding usernames across social networks using userrecon-win</span>
-                        <span class="m-arr">↗</span>
-                    </a>
-                    <a href="https://www.zscaler.com/blogs/security-research/threat-actors-distribute-malicious-vpn-apps-masquerading-popular-vendors" class="mention" target="_blank" rel="noopener">
-                        <span class="m-n">03</span>
-                        <span class="m-url">zscaler.com — Zscaler security research on threat actors distributing malicious VPN apps disguised as popular vendors</span>
-                        <span class="m-arr">↗</span>
-                    </a>
-                    <a href="https://codeby.net/threads/userrecon-poisk-pol-zovatelya-cherez-75-sotsial-nykh-setei.64923/" class="mention" target="_blank" rel="noopener">
-                        <span class="m-n">04</span>
-                        <span class="m-url">codeby.net — Forum thread discussing userrecon script for finding usernames across social networks</span>
-                        <span class="m-arr">↗</span>
-                    </a>
-                    <a href="https://www.blast.hk/threads/208066/" class="mention" target="_blank" rel="noopener">
-                        <span class="m-n">05</span>
-                        <span class="m-url">blast.hk — Game hacking forum thread analyzing malware disguised as CS:GO/CS2 cheat cracks and reverse engineering</span>
-                        <span class="m-arr">↗</span>
-                    </a>
-                    <a href="https://securityboulevard.com/2021/05/threat-actors-distribute-malicious-vpn-apps-masquerading-as-popular-vendors/" class="mention" target="_blank" rel="noopener">
-                        <span class="m-n">06</span>
-                        <span class="m-url">securityboulevard.com — VPN apps masquerading as popular vendors</span>
-                        <span class="m-arr">↗</span>
-                    </a>
-                    <a href="https://www.cyberforum.ru/viruses/thread3150560.html" class="mention" target="_blank" rel="noopener">
-                        <span class="m-n">07</span>
-                        <span class="m-url">cyberforum.ru — Cybersecurity forum thread about malware analysis, miner viruses and reverse engineering</span>
-                        <span class="m-arr">↗</span>
-                    </a>
-                    <a href="https://web.archive.org/web/20251017135911/https://appspyfree.com/facebook-hack/" class="mention" target="_blank" rel="noopener">
-                        <span class="m-n">08</span>
-                        <span class="m-url">appspyfree.com — Facebook hacking guide showing 5 methods including password guessing, phishing, keyloggers, and spy apps</span>
-                        <span class="m-arr">↗</span>
-                    </a>
-                    <a href="https://www.youtube.com/@FunnyToys-i6z/search?query=hXR16F" class="mention" target="_blank" rel="noopener">
-                        <span class="m-n">09</span>
-                        <span class="m-url">youtube.com/@FunnyToys-i6z — Game showcases</span>
-                        <span class="m-arr">↗</span>
-                    </a>
-                </div>
-            </section>
+  <div class="wrap">
+    <header class="main-card">
+      <div class="tri-field" aria-hidden="true">
+        <span class="tri"></span><span class="tri"></span><span class="tri"></span>
+        <span class="tri"></span><span class="tri"></span><span class="tri"></span>
+        <span class="tri"></span><span class="tri"></span><span class="tri"></span>
+        <span class="tri"></span><span class="tri"></span><span class="tri"></span>
+        <span class="tri"></span><span class="tri"></span><span class="tri"></span>
+        <span class="tri"></span><span class="tri"></span><span class="tri"></span>
+        <span class="tri"></span><span class="tri"></span><span class="tri"></span>
+        <span class="tri"></span><span class="tri"></span><span class="tri"></span>
+        <span class="tri"></span><span class="tri"></span><span class="tri"></span>
+      </div>
+      <div class="globe-decor" aria-hidden="true">
+        <svg viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice" style="width:100%; height:100%;">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#00e699" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="#00e699" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="400" cy="400" r="300" fill="url(#glow)" />
+          <circle cx="400" cy="400" r="200" fill="none" stroke="#00e699" stroke-width="1.5" stroke-dasharray="8 8" class="animated-dash" opacity="0.3"/>
+          <circle cx="400" cy="400" r="280" fill="none" stroke="#00e699" stroke-width="1" stroke-dasharray="4 12" class="reverse-animated-dash" opacity="0.2"/>
+          <circle cx="400" cy="400" r="100" fill="none" stroke="#00e699" stroke-width="1.5" class="pulse-ring-1" opacity="0.5"/>
+          <circle cx="400" cy="400" r="140" fill="none" stroke="#00e699" stroke-width="1" class="pulse-ring-2" opacity="0.4"/>
+          <circle cx="400" cy="400" r="180" fill="none" stroke="#00e699" stroke-width="0.8" class="pulse-ring-3" opacity="0.3"/>
+          <g class="globe-rotation" transform-origin="400 400">
+            <ellipse cx="400" cy="400" rx="260" ry="100" fill="none" stroke="#00e699" stroke-width="0.8" opacity="0.2"/>
+            <ellipse cx="400" cy="400" rx="100" ry="260" fill="none" stroke="#00e699" stroke-width="0.8" opacity="0.2"/>
+          </g>
+        </svg>
+      </div>
+      <div style="position:relative; z-index:1;">
+        <h1 class="main-card-name">zakta<span class="hl">byte</span></h1>
+        <p class="main-card-sub">// also known as hXR16F</p>
+        <p class="main-card-bio">
+          Tech enthusiast and self-taught hobbyist programmer. <strong>I wrote my first lines of code at the age of 9</strong> and never stopped. I specialize in developing custom solutions, automating complex processes to improve efficiency and productivity, and exploring the depths of cybersecurity through research and practical application.
+        </p>
+        <div class="main-card-btns">
+          <a href="https://github.com/hXR16F" class="btn btn-solid" target="_blank" rel="noopener">↗ Explore my Creations</a>
+          <a href="mailto:hxr16f.ar@gmail.com" class="btn btn-outline">→ Send me a message</a>
         </div>
+      </div>
+    </header>
 
-        <footer>
-            <span class="ft">Made with <span class="heart">&#x2764;</span> by zaktabyte</span>
-        </footer>
+    <section id="about" class="fade">
+      <div class="sec-hd">
+        <span class="sec-n">//</span>
+        <h2 class="sec-t">About Me</h2>
+        <div class="sec-line"></div>
+      </div>
+      <div class="about-text">
+        <p>
+          Hi — I'm a <strong>hobbyist programmer and tech enthusiast</strong> from Poland. I picked up coding at age 9 out of pure curiosity, and it turned into an obsession.
+        </p>
+        <p>
+          Most of my work is open source and lives on GitHub where repositories have
+          <strong>accumulated over 200 stars</strong>. My projects have even garnered attention from security researchers at
+          <a href="https://www.zscaler.com/" target="_blank"><strong>Zscaler</strong></a> and
+          <a href="https://securityboulevard.com/" target="_blank"><strong>SecurityBoulevard</strong></a>.
+          Additionally, several of my repositories have been preserved in the <a href="https://archiveprogram.github.com/arctic-vault/" target="_blank"><strong>GitHub Arctic Code Vault</strong></a>.
+        </p>
+        <p>
+          I maintain a homelab using an <strong>HP Prodesk 600 G3 SFF</strong>, running Proxmox with services like Pi-hole, n8n, MCP servers and more.
+        </p>
+        <p>
+          In my free time, I actively participate in cybersecurity challenges at <a href="https://tryhackme.com/" target="_blank"><strong>TryHackMe</strong></a>, where <strong>I'm ranked in the Top 1% globally</strong>.
+        </p>
+        <p>
+          Also, I became a semi-finalist at the <a href="https://www.pixblocks.com/pixchallenge" target="_blank"><strong>Pix Programming Challenge</strong></a> on "Master" difficulty in 2020.
+        </p>
+      </div>
+      <div class="contact-card">
+        <a class="contact-row" href="mailto:hxr16f.ar@gmail.com">
+          <span class="cr-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24" style="opacity: 1; transform: rotate(0deg);"><path fill="currentColor" fill-rule="evenodd" d="M5 20a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3zM7.625 8.22a1 1 0 1 0-1.25 1.56l3.75 3.001a3 3 0 0 0 3.75 0l3.75-3a1 1 0 1 0-1.25-1.562l-3.75 3a1 1 0 0 1-1.25 0z" clip-rule="evenodd"></path></svg></span>
+          <span class="cr-body">
+            <span class="cr-platform">Email</span>
+            <span class="cr-val">hxr16f.ar@gmail.com</span>
+          </span>
+          <span class="cr-arrow">↗</span>
+        </a>
+        <a class="contact-row" id="discord_username" data-copy=".zaktabyte"
+           href="https://discord.com/users/zaktabyte"
+           title="Click to copy username">
+          <span class="cr-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24" style="opacity: 1; transform: rotate(0deg);"><path fill="currentColor" d="M18.59 5.89c-1.23-.57-2.54-.99-3.92-1.23c-.17.3-.37.71-.5 1.04c-1.46-.22-2.91-.22-4.34 0c-.14-.33-.34-.74-.51-1.04c-1.38.24-2.69.66-3.92 1.23c-2.48 3.74-3.15 7.39-2.82 10.98c1.65 1.23 3.24 1.97 4.81 2.46c.39-.53.73-1.1 1.03-1.69c-.57-.21-1.11-.48-1.62-.79c.14-.1.27-.21.4-.31c3.13 1.46 6.52 1.46 9.61 0c.13.11.26.21.4.31c-.51.31-1.06.57-1.62.79c.3.59.64 1.16 1.03 1.69c1.57-.49 3.17-1.23 4.81-2.46c.39-4.17-.67-7.78-2.82-10.98Zm-9.75 8.78c-.94 0-1.71-.87-1.71-1.94s.75-1.94 1.71-1.94s1.72.87 1.71 1.94c0 1.06-.75 1.94-1.71 1.94m6.31 0c-.94 0-1.71-.87-1.71-1.94s.75-1.94 1.71-1.94s1.72.87 1.71 1.94c0 1.06-.75 1.94-1.71 1.94"></path></svg></span>
+          <span class="cr-body">
+            <span class="cr-platform">Discord</span>
+            <span class="cr-val">.zaktabyte</span>
+          </span>
+        </a>
+        <a class="contact-row" href="https://github.com/hXR16F">
+          <span class="cr-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24" style="opacity: 1; transform: rotate(0deg);"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path></svg></span>
+          <span class="cr-body">
+            <span class="cr-platform">GitHub</span>
+            <span class="cr-val">github.com/hXR16F</span>
+          </span>
+          <span class="cr-arrow">↗</span>
+        </a>
+        <a class="contact-row" href="https://tryhackme.com/p/zaktabyte">
+          <span class="cr-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24" style="opacity: 1; transform: rotate(0deg);"><path fill="currentColor" stroke="currentColor" stroke-width="0.6" d="M10.705 0C7.54 0 4.902 2.285 4.349 5.291a4.525 4.525 0 0 0-4.107 4.5a4.525 4.525 0 0 0 4.52 4.52h6.761a.625.625 0 1 0 0-1.25H4.761a3.273 3.273 0 0 1-3.27-3.27A3.273 3.273 0 0 1 6.59 7.08a.625.625 0 0 0 .7-1.035a4.5 4.5 0 0 0-1.68-.69a5.22 5.22 0 0 1 5.096-4.104a5.22 5.22 0 0 1 5.174 4.57a5 5 0 0 0-.488.305a.625.625 0 1 0 .731 1.013a3.25 3.25 0 0 1 1.912-.616a3.28 3.28 0 0 1 3.203 2.61a.625.625 0 0 0 1.225-.251a4.53 4.53 0 0 0-4.428-3.61a4.5 4.5 0 0 0-.958.105C16.556 2.328 13.9 0 10.705 0m5.192 10.64a.9.9 0 0 0-.462.108a.9.9 0 0 0-.313.29a1.3 1.3 0 0 0-.175.427a2.4 2.4 0 0 0-.054.514q0 .271.054.517q.055.246.175.43a.9.9 0 0 0 .313.297q.19.11.462.11q.27 0 .46-.11a.9.9 0 0 0 .309-.296q.12-.185.173-.431q.054-.246.054-.517q0-.27-.054-.514a1.3 1.3 0 0 0-.173-.426a.9.9 0 0 0-.309-.291a.9.9 0 0 0-.46-.108m6.486 0a.9.9 0 0 0-.462.108a.9.9 0 0 0-.313.29a1.3 1.3 0 0 0-.175.427a2.4 2.4 0 0 0-.053.514q0 .271.053.517q.055.246.175.43a.9.9 0 0 0 .313.297q.19.11.462.11q.27 0 .46-.11a.9.9 0 0 0 .31-.296q.117-.185.172-.431t.054-.517q0-.27-.054-.514a1.3 1.3 0 0 0-.173-.426a.9.9 0 0 0-.308-.291a.9.9 0 0 0-.461-.108m-8.537.068l-.84.618l.313.43l.476-.368v1.877h.603v-2.557zm6.486 0l-.841.618l.314.43l.477-.368v1.877h.603v-2.557zm-4.435.445q.119 0 .193.084q.074.085.114.21q.039.125.054.269a2.5 2.5 0 0 1 0 .533q-.015.145-.054.27a.6.6 0 0 1-.114.21a.24.24 0 0 1-.193.085a.25.25 0 0 1-.195-.086a.6.6 0 0 1-.118-.209a1.3 1.3 0 0 1-.056-.27a2.7 2.7 0 0 1 0-.533q.015-.144.056-.27a.6.6 0 0 1 .118-.209a.25.25 0 0 1 .195-.084m6.486 0q.12 0 .193.084q.074.085.114.21t.054.269a2.5 2.5 0 0 1 0 .533q-.014.145-.054.27a.6.6 0 0 1-.114.21a.24.24 0 0 1-.193.085a.25.25 0 0 1-.195-.086a.6.6 0 0 1-.117-.209a1.3 1.3 0 0 1-.056-.27a2.6 2.6 0 0 1 0-.533q.014-.144.056-.27a.6.6 0 0 1 .117-.209a.25.25 0 0 1 .195-.084m-2.191 3.51a.93.93 0 0 0-.463.109a.9.9 0 0 0-.312.291q-.12.182-.175.426a2.4 2.4 0 0 0-.054.514q0 .27.054.516t.175.432a.9.9 0 0 0 .312.296a.9.9 0 0 0 .463.11q.27 0 .46-.11a.9.9 0 0 0 .308-.296a1.3 1.3 0 0 0 .174-.432q.054-.245.054-.516q0-.27-.054-.514a1.3 1.3 0 0 0-.174-.426a.9.9 0 0 0-.309-.291a.9.9 0 0 0-.46-.108zm-6.402.07l-.841.617l.314.43l.476-.369v1.878h.604v-2.557zm2.125 0l-.841.617l.314.43l.477-.369v1.878h.603v-2.557zm2.116 0l-.84.617l.313.43l.477-.369v1.878h.603v-2.557zm2.16.443q.12 0 .194.085a.6.6 0 0 1 .114.21q.04.124.053.269a2.6 2.6 0 0 1 0 .532a1.3 1.3 0 0 1-.053.27a.6.6 0 0 1-.114.21a.24.24 0 0 1-.193.085a.25.25 0 0 1-.196-.085a.6.6 0 0 1-.117-.21a1.3 1.3 0 0 1-.056-.27a2.6 2.6 0 0 1 0-.532q.014-.145.056-.27a.6.6 0 0 1 .117-.209a.25.25 0 0 1 .196-.085zm-6.729 3.073a.7.7 0 0 0-.335.078a.66.66 0 0 0-.227.211a.9.9 0 0 0-.127.31q-.04.177-.04.373c0 .196.013.256.04.375a.9.9 0 0 0 .127.313a.65.65 0 0 0 .227.215q.138.08.335.08a.66.66 0 0 0 .334-.08a.65.65 0 0 0 .225-.215q.086-.135.125-.313a2 2 0 0 0 .04-.375q0-.195-.04-.373a.9.9 0 0 0-.125-.31a.66.66 0 0 0-.225-.21a.7.7 0 0 0-.334-.08zm3.086 0a.7.7 0 0 0-.336.078a.66.66 0 0 0-.226.211a.9.9 0 0 0-.127.31a1.7 1.7 0 0 0-.04.373q0 .197.04.375a.9.9 0 0 0 .127.313q.088.135.226.215q.14.08.336.08a.66.66 0 0 0 .334-.08a.65.65 0 0 0 .224-.215q.087-.135.126-.313a1.75 1.75 0 0 0 0-.748a1 1 0 0 0-.126-.31a.66.66 0 0 0-.224-.21a.7.7 0 0 0-.334-.08zm5.108 0a.7.7 0 0 0-.336.078a.66.66 0 0 0-.226.211a.9.9 0 0 0-.127.31q-.04.177-.04.373c0 .196.013.256.04.375a.9.9 0 0 0 .127.313q.087.135.226.215q.14.08.336.08t.334-.08a.65.65 0 0 0 .224-.215q.087-.135.126-.313a2 2 0 0 0 .04-.375q0-.195-.04-.373a1 1 0 0 0-.126-.31a.66.66 0 0 0-.224-.21a.7.7 0 0 0-.334-.08zm-6.658.05l-.61.448l.227.311l.346-.266v1.362h.438v-1.856zm3.068 0l-.61.448l.227.311l.346-.266v1.362h.438v-1.856zm5.108 0l-.611.448l.228.311l.346-.266v1.362h.438v-1.856zm-9.712.322q.087 0 .14.062a.4.4 0 0 1 .083.151a1 1 0 0 1 .04.196a2 2 0 0 1 0 .386a1 1 0 0 1-.04.197a.4.4 0 0 1-.083.152a.18.18 0 0 1-.14.061a.18.18 0 0 1-.141-.06a.4.4 0 0 1-.085-.153a1 1 0 0 1-.041-.197a2 2 0 0 1 0-.386a1 1 0 0 1 .04-.196a.4.4 0 0 1 .086-.151a.18.18 0 0 1 .141-.062m3.086 0q.086 0 .14.062a.4.4 0 0 1 .082.151a1 1 0 0 1 .04.196a2 2 0 0 1 0 .386a1 1 0 0 1-.04.197a.4.4 0 0 1-.082.152a.18.18 0 0 1-.14.061a.18.18 0 0 1-.141-.06a.4.4 0 0 1-.086-.153a1 1 0 0 1-.04-.197a2 2 0 0 1-.011-.195q0-.086.01-.191a1 1 0 0 1 .041-.196a.4.4 0 0 1 .086-.151a.18.18 0 0 1 .141-.062m5.108 0q.087 0 .14.062a.4.4 0 0 1 .082.151a1 1 0 0 1 .04.196a2 2 0 0 1 0 .386a1 1 0 0 1-.04.197a.4.4 0 0 1-.082.152a.18.18 0 0 1-.14.061a.18.18 0 0 1-.142-.06a.4.4 0 0 1-.085-.153a1 1 0 0 1-.04-.197a2 2 0 0 1-.011-.195q0-.086.01-.191a1 1 0 0 1 .04-.196a.5.5 0 0 1 .086-.151a.18.18 0 0 1 .142-.062m-1.684 1.814a.7.7 0 0 0-.336.079a.66.66 0 0 0-.227.21a.9.9 0 0 0-.127.31a1.7 1.7 0 0 0 0 .748a1 1 0 0 0 .127.314q.088.135.227.215q.14.08.336.08a.66.66 0 0 0 .334-.08a.65.65 0 0 0 .224-.215q.087-.135.126-.314a1.7 1.7 0 0 0-.001-.747a.9.9 0 0 0-.125-.31a.65.65 0 0 0-.224-.211a.7.7 0 0 0-.334-.079m3.063 0a.7.7 0 0 0-.336.079a.7.7 0 0 0-.227.21a.9.9 0 0 0-.127.31a1.7 1.7 0 0 0 0 .748a.9.9 0 0 0 .127.314a.66.66 0 0 0 .227.215q.138.08.336.08a.65.65 0 0 0 .334-.08a.65.65 0 0 0 .223-.215q.087-.135.126-.314a1.7 1.7 0 0 0 0-.747a.9.9 0 0 0-.126-.31a.65.65 0 0 0-.223-.211a.7.7 0 0 0-.334-.079m-1.545.05l-.611.448l.228.312l.346-.267v1.363h.438v-1.856zm-1.518.323q.086 0 .14.061a.4.4 0 0 1 .082.152a1 1 0 0 1 .04.195a2 2 0 0 1 0 .387a1 1 0 0 1-.04.197a.4.4 0 0 1-.082.152a.18.18 0 0 1-.14.06a.18.18 0 0 1-.142-.06a.4.4 0 0 1-.085-.152a1 1 0 0 1-.04-.197a2 2 0 0 1-.011-.195q0-.087.01-.192a1 1 0 0 1 .041-.195q.03-.09.085-.152a.18.18 0 0 1 .142-.061m3.063 0q.086 0 .14.061a.4.4 0 0 1 .082.152a1 1 0 0 1 .04.195a2 2 0 0 1 0 .387a1 1 0 0 1-.04.197a.4.4 0 0 1-.083.152a.18.18 0 0 1-.14.06a.18.18 0 0 1-.141-.06a.4.4 0 0 1-.085-.152a1 1 0 0 1-.04-.197a2 2 0 0 1 0-.387a1 1 0 0 1 .04-.195q.03-.09.085-.152a.18.18 0 0 1 .142-.061m-9.713.185a.5.5 0 0 0-.232.055a.46.46 0 0 0-.157.146a.6.6 0 0 0-.089.215a1.2 1.2 0 0 0-.027.259q0 .135.027.26a.7.7 0 0 0 .089.216q.06.094.157.149a.46.46 0 0 0 .232.056q.136-.001.231-.056a.45.45 0 0 0 .156-.149a.7.7 0 0 0 .087-.217a1.2 1.2 0 0 0 0-.518a.7.7 0 0 0-.087-.215a.45.45 0 0 0-.156-.146a.46.46 0 0 0-.23-.055zm1.052.035l-.423.31l.158.217l.24-.185v.944h.303v-1.286zm-1.052.224q.06 0 .097.042a.3.3 0 0 1 .057.105a.7.7 0 0 1 .028.136q.006.073.007.133q0 .06-.007.135a.7.7 0 0 1-.028.136a.3.3 0 0 1-.057.105a.12.12 0 0 1-.097.043a.13.13 0 0 1-.098-.043a.3.3 0 0 1-.059-.105a.6.6 0 0 1-.028-.136a1.4 1.4 0 0 1 0-.268a.6.6 0 0 1 .028-.136a.3.3 0 0 1 .06-.105a.13.13 0 0 1 .097-.042m3.775 1.394a.46.46 0 0 0-.232.054a.45.45 0 0 0-.157.146a.6.6 0 0 0-.088.214a1.2 1.2 0 0 0 0 .519a.6.6 0 0 0 .088.217a.46.46 0 0 0 .157.15a.46.46 0 0 0 .232.054a.45.45 0 0 0 .232-.055a.45.45 0 0 0 .155-.149a.7.7 0 0 0 .087-.217a1.2 1.2 0 0 0 0-.519a.6.6 0 0 0-.087-.214a.45.45 0 0 0-.155-.146a.46.46 0 0 0-.232-.054m1.052.034l-.423.31l.158.216l.24-.185v.945h.303V22.68zm-1.052.223q.06 0 .098.043a.3.3 0 0 1 .057.105a.6.6 0 0 1 .027.135a1.3 1.3 0 0 1 0 .268a.7.7 0 0 1-.027.137a.3.3 0 0 1-.057.105a.12.12 0 0 1-.098.042a.13.13 0 0 1-.098-.042a.3.3 0 0 1-.059-.105a.6.6 0 0 1-.028-.137a1.4 1.4 0 0 1 0-.268a.6.6 0 0 1 .028-.135a.3.3 0 0 1 .06-.105a.12.12 0 0 1 .097-.043"></path></svg></span>
+          <span class="cr-body">
+            <span class="cr-platform">TryHackMe</span>
+            <span class="cr-val">tryhackme.com/p/zaktabyte</span>
+          </span>
+          <span class="cr-arrow">↗</span>
+        </a>
+        <a class="contact-row" href="https://llamalab.com/automate/community/?q=hXR16F">
+          <span class="cr-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24" style="opacity: 1; transform: rotate(0deg);"><path fill="currentColor" d="M7.4 17.25q-1.05.875-2.187.8t-1.988-.775t-1.162-1.837t.412-2.338L4.35 10q-.625-.55-.987-1.325T3 7q0-1.65 1.175-2.825T7 3t2.825 1.175T11 7T9.825 9.825T7 11q-.225 0-.45-.025t-.425-.075L4.2 14.15q-.275.45-.175.888t.425.712t.775.313t.875-.313l10.5-9.025q1.05-.875 2.2-.788t2 .788t1.15 1.838t-.425 2.337L19.65 14q.625.55.988 1.325T21 17q0 1.65-1.175 2.825T17 21t-2.825-1.175T13 17t1.175-2.825T17 13q.225 0 .438.025t.412.075l1.95-3.25q.275-.45.175-.888t-.425-.712t-.775-.312t-.875.312z"></path></svg></span>
+          <span class="cr-body">
+            <span class="cr-platform">Automate</span>
+            <span class="cr-val">llamalab.com/automate/community/?q=hXR16F</span>
+          </span>
+          <span class="cr-arrow">↗</span>
+        </a>
+        <a class="contact-row" href="https://youtube.com/c/hXR16F">
+          <span class="cr-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24" style="opacity: 1; transform: rotate(0deg);"><path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"></path></svg></span>
+          <span class="cr-body">
+            <span class="cr-platform">YouTube</span>
+            <span class="cr-val">youtube.com/c/hXR16F</span>
+          </span>
+          <span class="cr-arrow">↗</span>
+        </a>
+      </div>
+    </section>
 
-        <script>
-            const nav = document.querySelector("nav");
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > 50) {
-                    nav.classList.add("nav-scrolled");
-                } else {
-                    nav.classList.remove("nav-scrolled");
-                }
-            });
-        </script>
+    <section id="stack" class="fade">
+      <div class="sec-hd">
+        <span class="sec-n">//</span>
+        <h2 class="sec-t">Technology Stack</h2>
+        <div class="sec-line"></div>
+      </div>
 
-        <script src="js/clipboard.min.js"></script>
-        <script>
-            const discordUsername = document.getElementById("discord_username");
-            const usernameSpan = discordUsername.querySelector(".cr-val");
-            const originalText = usernameSpan.textContent;
+      <div class="stack-group">
+        <div class="stack-group-label">Programming languages</div>
+        <div class="stack-pills">
+          <span class="pill loved">Python ❤</span>
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill loved">Batch ❤</span>
+          <span class="pill">AutoIt</span>
+          <span class="pill">Lua</span>
+          <span class="pill">SQL</span>
+        </div>
+      </div>
 
-            const clipboard = new ClipboardJS(discordUsername);
+      <div class="stack-group">
+        <div class="stack-group-label">Environments, hardware, frameworks, libraries, tools, etc.</div>
+        <div class="stack-pills">
+          <span class="pill loved">Linux ❤</span>
+          <span class="pill">Windows</span>
+          <span class="pill">Proxmox</span>
+          <span class="pill">VirtualBox</span>
+          <span class="pill">Docker</span>
+          <span class="pill loved">Raspberry Pi ❤</span>
+          <span class="pill">Arduino</span>
+          <span class="pill">ESP32</span>
+          <span class="pill">ESP8266</span>
+          <span class="pill loved">Mikr.us ❤</span>
+          <span class="pill">Cloudflare</span>
+          <span class="pill">Flask</span>
+          <span class="pill">Selenium</span>
+          <span class="pill">PyAutoGUI</span>
+          <span class="pill">PyQt6</span>
+          <span class="pill">Tkinter</span>
+          <span class="pill">Tailwind</span>
+          <span class="pill loved">Zed ❤</span>
+          <span class="pill loved">Tmux ❤</span>
+          <span class="pill">LM Studio</span>
+          <span class="pill">Git</span>
+          <span class="pill">Regex</span>
+          <span class="pill">Cheat Engine</span>
+          <span class="pill loved">Nmap ❤</span>
+          <span class="pill">Wireshark</span>
+          <span class="pill">Burp Suite</span>
+          <span class="pill">Metasploit</span>
+          <span class="pill">THC-Hydra</span>
+        </div>
+      </div>
+    </section>
 
-            clipboard.on("success", function (e) {
-                usernameSpan.innerText = "✓ copied username!";
-                setTimeout(() => {
-                    usernameSpan.innerText = originalText;
-                }, 1500);
-                e.clearSelection();
-            });
+    <section id="projects" class="fade">
+      <div class="sec-hd">
+        <span class="sec-n">//</span>
+        <h2 class="sec-t">Featured Projects</h2>
+        <div class="sec-line"></div>
+      </div>
+      <div class="projects-grid">
+        <a href="https://1000420.xyz/" class="proj-card" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <div class="proj-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+                    <g fill="none" stroke="currentColor" stroke-width="4">
+                        <path stroke-linecap="round" d="M12 4h24"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m10.777 30l7.242-14.961V4h12.01v11.039L37.245 30"/>>
+                        <path stroke-linejoin="round" d="M7.794 43.673a3.273 3.273 0 0 1-1.52-4.372L10.777 30S18 35 24 30s13.246 0 13.246 0l4.49 9.305A3.273 3.273 0 0 1 38.787 44H9.22c-.494 0-.981-.112-1.426-.327Z"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="proj-meta"><span class="proj-arrow">↗</span></div>
+          </div>
+          <div class="proj-title">1000420.xyz</div>
+          <div class="proj-desc">Playful digital experimentation platform that offers interactive tools for users to enjoy and use.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag extra">Flask</span>
+            <span class="proj-tag extra">API</span>
+          </div>
+        </a>
 
-            const io = new IntersectionObserver(
-                (entries) => {
-                    entries.forEach((e) => {
-                        if (e.isIntersecting) {
-                            e.target.classList.add("in");
-                            io.unobserve(e.target);
-                        }
-                    });
-                },
-                { threshold: 0.06, rootMargin: "0px 0px -30px 0px" },
-            );
+        <a href="https://github.com/hXR16F/PocketRecon-AI" class="proj-card" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <div class="proj-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 5a3 3 0 1 0-5.997.125a4 4 0 0 0-2.526 5.77a4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+                  <path d="M9 13a4.5 4.5 0 0 0 3-4M6.003 5.125A3 3 0 0 0 6.401 6.5m-2.924 4.396a4 4 0 0 1 .585-.396M6 18a4 4 0 0 1-1.967-.516M12 13h4m-4 5h6a2 2 0 0 1 2 2v1M12 8h8m-4 0V5a2 2 0 0 1 2-2"/>
+                  <circle cx="16" cy="13" r=".5"/><circle cx="18" cy="3" r=".5"/><circle cx="20" cy="21" r=".5"/><circle cx="20" cy="8" r=".5"/>
+                </g>
+              </svg>
+            </div>
+            <div class="proj-meta"><span class="proj-arrow">↗</span></div>
+          </div>
+          <div class="proj-title">PocketRecon-AI</div>
+          <div class="proj-desc">Lightweight MCP server for local AI-powered cybersecurity reconnaissance.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag extra">MCP</span>
+            <span class="proj-tag extra">Cybersecurity</span>
+          </div>
+        </a>
 
-            document.querySelectorAll(".fade").forEach((el) => io.observe(el));
-        </script>
-    </body>
+        <a href="https://github.com/hXR16F/AntiAV" class="proj-card" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <div class="proj-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256">
+                <path fill="currentColor" d="M136 108a28 28 0 1 0-28 28a28 28 0 0 0 28-28m-28 12a12 12 0 1 1 12-12a12 12 0 0 1-12 12m68-8a16 16 0 1 1-16 16a16 16 0 0 1 16-16m-32 64a16 16 0 1 1-16-16a16 16 0 0 1 16 16m96-56h-16.34a95.52 95.52 0 0 0-22.39-53.95l12.39-12.39a8 8 0 0 0-11.32-11.32L190 54.73a95.52 95.52 0 0 0-54-22.39V16a8 8 0 0 0-16 0v16.34a95.52 95.52 0 0 0-53.95 22.39L53.66 42.34a8 8 0 0 0-11.32 11.32l12.39 12.39a95.52 95.52 0 0 0-22.39 54H16a8 8 0 0 0 0 16h16.34A95.52 95.52 0 0 0 54.73 190l-12.39 12.34a8 8 0 0 0 11.32 11.32l12.39-12.39a95.52 95.52 0 0 0 54 22.39V240a8 8 0 0 0 16 0v-16.34A95.52 95.52 0 0 0 190 201.27l12.39 12.39a8 8 0 0 0 11.32-11.32L201.27 190a95.52 95.52 0 0 0 22.39-54H240a8 8 0 0 0 0-16m-112 88a80 80 0 1 1 80-80a80.09 80.09 0 0 1-80 80"/>
+              </svg>
+            </div>
+            <div class="proj-meta"><span class="proj-arrow">↗</span></div>
+          </div>
+          <div class="proj-title">AntiAV</div>
+          <div class="proj-desc">Making any file undetectable using obfuscation methods.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Batch</span>
+            <span class="proj-tag extra">Cybersecurity</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/hXR16F/stealth-fingerprinter" class="proj-card" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <div class="proj-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6 23H3q-.825 0-1.412-.587T1 21v-3h2v3h3zm12 0v-2h3v-3h2v3q0 .825-.587 1.413T21 23zm-6-4.5q-3 0-5.437-1.775T3 12q1.125-2.95 3.563-4.725T12 5.5t5.438 1.775T21 12q-1.125 2.95-3.562 4.725T12 18.5m0-3q1.45 0 2.475-1.025T15.5 12t-1.025-2.475T12 8.5T9.525 9.525T8.5 12t1.025 2.475T12 15.5m0-2q-.625 0-1.062-.437T10.5 12t.438-1.062T12 10.5t1.063.438T13.5 12t-.437 1.063T12 13.5M1 6V3q0-.825.588-1.412T3 1h3v2H3v3zm20 0V3h-3V1h3q.825 0 1.413.588T23 3v3z"/>
+              </svg>
+            </div>
+            <div class="proj-meta"><span class="proj-arrow">↗</span></div>
+          </div>
+          <div class="proj-title">Stealth-Fingerprinter</div>
+          <div class="proj-desc">Advanced URL-based tracking system with obfuscation and endpoint management.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag extra">Flask</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/hXR16F/progress-bar" class="proj-card" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <div class="proj-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                <path fill="currentColor" fill-rule="evenodd" d="M4 5.5h8a2.5 2.5 0 0 1 0 5H4a2.5 2.5 0 0 1 0-5M0 8a4 4 0 0 1 4-4h8a4 4 0 0 1 0 8H4a4 4 0 0 1-4-4m4-1a1 1 0 0 0 0 2h5a1 1 0 0 0 0-2z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div class="proj-meta"><span class="proj-arrow">↗</span></div>
+          </div>
+          <div class="proj-title">Progress-Bar</div>
+          <div class="proj-desc">Fancy &amp; customizable progress bar for batch scripts with feedback upon completion.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Batch</span>
+            <span class="proj-tag extra">Utility</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/hXR16F/OmegleBOT" class="proj-card" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <div class="proj-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M9 15a1 1 0 1 0 1 1a1 1 0 0 0-1-1m-7-1a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1m20 0a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1m-5-7h-4V5.72A2 2 0 0 0 14 4a2 2 0 0 0-4 0a2 2 0 0 0 1 1.72V7H7a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3m-3.28 2l-.5 2h-2.44l-.5-2ZM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1.22L9 12.24a1 1 0 0 0 1 .76h4a1 1 0 0 0 1-.76L15.78 9H17a1 1 0 0 1 1 1Zm-3-4a1 1 0 1 0 1 1a1 1 0 0 0-1-1"/>
+              </svg>
+            </div>
+            <div class="proj-meta"><span class="proj-arrow">↗</span></div>
+          </div>
+          <div class="proj-title">OmegleBOT</div>
+          <div class="proj-desc">Automating interactions on Omegle using Selenium.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag extra">Selenium</span>
+            <span class="proj-tag extra">Automation</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="mentions" class="fade">
+      <div class="sec-hd">
+        <span class="sec-n">//</span>
+        <h2 class="sec-t">Featured In</h2>
+        <div class="sec-line"></div>
+      </div>
+      <div class="mentions-list">
+        <a href="https://x.com/nixcraft/status/1419969356243476483" class="mention" target="_blank" rel="noopener">
+          <span class="m-n">01</span>
+          <span class="m-url">x.com/nixcraft — Ported version of "screenfetch" from Linux</span>
+          <span class="m-arr">↗</span>
+        </a>
+        <a href="https://rutube.ru/video/6c6d483aa7006bef6770933a69300218/" class="mention" target="_blank" rel="noopener">
+          <span class="m-n">02</span>
+          <span class="m-url">rutube.ru — Finding usernames across social networks using userrecon-win</span>
+          <span class="m-arr">↗</span>
+        </a>
+        <a href="https://www.zscaler.com/blogs/security-research/threat-actors-distribute-malicious-vpn-apps-masquerading-popular-vendors" class="mention" target="_blank" rel="noopener">
+          <span class="m-n">03</span>
+          <span class="m-url">zscaler.com — Zscaler security research on threat actors distributing malicious VPN apps disguised as popular vendors</span>
+          <span class="m-arr">↗</span>
+        </a>
+        <a href="https://codeby.net/threads/userrecon-poisk-pol-zovatelya-cherez-75-sotsial-nykh-setei.64923/" class="mention" target="_blank" rel="noopener">
+          <span class="m-n">04</span>
+          <span class="m-url">codeby.net — Forum thread discussing userrecon script for finding usernames across social networks</span>
+          <span class="m-arr">↗</span>
+        </a>
+        <a href="https://www.blast.hk/threads/208066/" class="mention" target="_blank" rel="noopener">
+          <span class="m-n">05</span>
+          <span class="m-url">blast.hk — Game hacking forum thread analyzing malware disguised as CS:GO/CS2 cheat cracks and reverse engineering</span>
+          <span class="m-arr">↗</span>
+        </a>
+        <a href="https://securityboulevard.com/2021/05/threat-actors-distribute-malicious-vpn-apps-masquerading-as-popular-vendors/" class="mention" target="_blank" rel="noopener">
+          <span class="m-n">06</span>
+          <span class="m-url">securityboulevard.com — VPN apps masquerading as popular vendors</span>
+          <span class="m-arr">↗</span>
+        </a>
+        <a href="https://www.cyberforum.ru/viruses/thread3150560.html" class="mention" target="_blank" rel="noopener">
+          <span class="m-n">07</span>
+          <span class="m-url">cyberforum.ru — Cybersecurity forum thread about malware analysis, miner viruses and reverse engineering</span>
+          <span class="m-arr">↗</span>
+        </a>
+        <a href="https://web.archive.org/web/20251017135911/https://appspyfree.com/facebook-hack/" class="mention" target="_blank" rel="noopener">
+          <span class="m-n">08</span>
+          <span class="m-url">appspyfree.com — Facebook hacking guide showing 5 methods including password guessing, phishing, keyloggers, and spy apps</span>
+          <span class="m-arr">↗</span>
+        </a>
+        <a href="https://www.youtube.com/@FunnyToys-i6z/search?query=hXR16F" class="mention" target="_blank" rel="noopener">
+          <span class="m-n">09</span>
+          <span class="m-url">youtube.com/@FunnyToys-i6z — Game showcases</span>
+          <span class="m-arr">↗</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <span class="ft">Made with <span class="heart">❤</span> by zaktabyte</span>
+  </footer>
+
+  <script src="js/clipboard.min.js"></script>
+  <script>
+    (function() {
+      const nav = document.querySelector('nav');
+      const discordRow = document.getElementById('discord_username');
+
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('nav-scrolled', window.scrollY > 50);
+      });
+
+      if (discordRow) {
+        new ClipboardJS(discordRow, {
+          text: () => discordRow.dataset.copy || '.zaktabyte'
+        }).on('success', (e) => {
+          const valSpan = discordRow.querySelector('.cr-val');
+          const originalText = valSpan.textContent;
+          valSpan.textContent = '✓ copied!';
+          valSpan.style.color = 'var(--accent-100)';
+          setTimeout(() => {
+            valSpan.textContent = originalText;
+            valSpan.style.color = '';
+          }, 1200);
+          e.clearSelection();
+        });
+
+        discordRow.addEventListener('click', (e) => e.preventDefault());
+      }
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
+
+      document.querySelectorAll('.fade').forEach((el) => io.observe(el));
+    })();
+  </script>
+</body>
 </html>
