@@ -170,17 +170,19 @@ a {
 nav {
   width: 100%;
   max-width: var(--content-width);
-  padding: 1.35rem 0 1rem;
-  margin-top: 3rem;
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0.15rem;
   display: flex;
   justify-content: flex-end;
   position: sticky;
   top: 0;
   z-index: 50;
   transition:
-    background-color var(--dur) var(--ease-out),
-    padding var(--dur) var(--ease-out),
-    border-color var(--dur) var(--ease-out);
+    background-color 0s var(--ease-out),
+    padding 0s var(--ease-out),
+    border-color var(--dur-fade) var(--ease-out);
 }
 
 nav.nav-scrolled {
