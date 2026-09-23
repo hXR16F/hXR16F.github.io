@@ -171,6 +171,7 @@ nav {
   width: 100%;
   max-width: var(--content-width);
   padding: 1.35rem 0 1rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: flex-end;
   position: sticky;
@@ -198,6 +199,8 @@ nav.nav-scrolled {
 }
 
 .nav-links a {
+  --link-pad: 4px;
+
   color: var(--fg-300);
   text-decoration: none;
   font-family: var(--font-mono);
@@ -207,17 +210,20 @@ nav.nav-scrolled {
   text-transform: lowercase;
   position: relative;
   transition: color var(--dur) var(--ease-out);
+  padding: var(--link-pad);
 }
 
 .nav-links a::after {
   content: "";
   position: absolute;
-  left: 0;
-  right: 100%;
-  bottom: -0.35rem;
+  left: var(--link-pad);
+  right: var(--link-pad);
+  bottom: -0.1rem;
   height: 1px;
   background: var(--accent-100);
-  transition: right var(--dur-slow) var(--ease-out);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--dur-slow) var(--ease-out);
 }
 
 .nav-links a:hover {
@@ -225,7 +231,7 @@ nav.nav-scrolled {
 }
 
 .nav-links a:hover::after {
-  right: 0;
+  transform: scaleX(1);
 }
 
 .wrap {
@@ -804,7 +810,7 @@ section {
 footer {
   width: 100%;
   max-width: var(--content-width);
-  margin-top: 4rem;
+  margin-top: 12rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--border-100);
   text-align: center;
@@ -1123,7 +1129,10 @@ footer {
     font-size: var(--fs-body);
   }
 
-  nav { padding: 1rem 0 0.8rem; }
+  nav {
+      padding: 1rem 0 0.8rem;
+      margin-top: 0;
+  }
 
   nav.nav-scrolled {
     padding-top: 0.7rem;
@@ -1194,5 +1203,5 @@ footer {
 
   .m-n { min-width: 24px; }
 
-  footer { margin-top: 3rem; }
+  footer { margin-top: 8rem; }
 }
