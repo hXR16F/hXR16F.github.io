@@ -1,0 +1,67 @@
+# zaktabyte
+
+> Personal site of zaktabyte (also known as hXR16F), a tech enthusiast and self-taught hobbyist programmer and cybersecurity enthusiast from Poland. Focus areas: Python, automation, Linux, cybersecurity, homelab projects, self-hosted infrastructure, local AI, and open source. Site title: "zaktabyte — Hobbyist Programmer & Cybersecurity Enthusiast".
+
+The site is a single page with these sections: Main, About, Stack, Projects, Mentions ("Featured In"). Footer: "Made with ❤ by zaktabyte".
+
+## About the author
+
+- Wrote first lines of code at the age of 9 out of pure curiosity and never stopped.
+- Specializes in developing custom solutions, automating complex processes to improve efficiency and productivity, and exploring the depths of cybersecurity through research and practical application.
+- Learns by building: if something isn't understood, takes it apart and builds a custom version. Projects span web development, automation, cybersecurity, self-hosted infrastructure, local AI, and software experimentation, often starting as small ideas and growing into fully functional tools.
+- Most work is open source on GitHub, where repositories have accumulated over 200 stars.
+- Projects have drawn attention from security researchers at Zscaler and Security Boulevard.
+- Several repositories are preserved in the GitHub Arctic Code Vault.
+- Maintains a homelab on an HP ProDesk 600 G3 SFF running Proxmox, with services like Pi-hole, n8n, MCP servers and more.
+- Actively takes part in cybersecurity challenges on TryHackMe, ranked in the Top 1% globally.
+- Semi-finalist at the Pix Programming Challenge on "Master" difficulty in 2020.
+
+## Technology stack
+
+Items marked (favorite) are marked with a ❤ on the site.
+
+- Programming languages: Python (favorite), HTML, CSS, JavaScript, Batch (favorite), Bash, AutoIt, Lua, SQL
+- Environments, hardware, frameworks, libraries, tools: Linux (favorite), Windows, Proxmox, VirtualBox, Docker, Raspberry Pi (favorite), Arduino, ESP32, ESP8266, Mikr.us (favorite), Nginx, Cloudflare, Flask (favorite), FastAPI, Selenium, PyAutoGUI, PyQt6, Tkinter, Tailwind, Zed (favorite), Visual Studio Code, Tmux (favorite), LM Studio (favorite), N8n, Git, Regex, Cheat Engine, Nmap (favorite), Wireshark, Burp Suite (favorite), Metasploit, Aircrack-ng, Hashcat, John the Ripper, THC-Hydra
+
+## Site
+
+- [zaktabyte.dev](https://zaktabyte.dev/): Canonical single-page personal site (bio, stack, featured projects, mentions)
+
+## Contact and profiles
+
+- [Email: hxr16f.ar@gmail.com](mailto:hxr16f.ar@gmail.com): Contact address (obfuscated by Cloudflare on the page; decoded here)
+- [Discord: .zaktabyte](https://discord.com/users/zaktabyte): Discord username `.zaktabyte`
+- [GitHub: github.com/hXR16F](https://github.com/hXR16F): All open-source repositories ("Explore my Creations")
+- [TryHackMe: tryhackme.com/p/zaktabyte](https://tryhackme.com/p/zaktabyte): Cybersecurity challenges, Top 1% globally
+- [Automate: llamalab.com/automate/community/?q=hXR16F](https://llamalab.com/automate/community/?q=hXR16F): Android Automate community flows by the author
+- [YouTube: youtube.com/c/hXR16F](https://youtube.com/c/hXR16F): Video channel
+
+## Featured projects
+
+- [1000420.xyz](https://1000420.xyz/): A playful digital experimentation platform offering a curated collection of interactive tools and mini-experiments to explore, tinker with, and enjoy. Tags: Python, Flask, API
+- [PocketRecon-AI](https://github.com/hXR16F/PocketRecon-AI): Lightweight MCP server that gives local LLMs AI-powered cybersecurity reconnaissance capabilities; runs on low-power devices like Raspberry Pi. Tags: Python, MCP, Cybersecurity
+- [AntiAV](https://github.com/hXR16F/AntiAV): A tool that makes any file undetectable by antivirus software using obfuscation techniques. Tags: Batch, Cybersecurity
+- [Stealth-Fingerprinter](https://github.com/hXR16F/stealth-fingerprinter): A sophisticated URL-based tracking system featuring bot detection, obfuscation capabilities and advanced endpoint management. Tags: Python, Flask
+- [Progress-Bar](https://github.com/hXR16F/progress-bar): A fancy and customizable progress bar for batch scripts, with real-time visual feedback during execution and a completion summary when finished. Tags: Batch, Utility
+- [OmegleBOT](https://github.com/hXR16F/OmegleBOT): A Selenium-powered bot that automates Omegle interactions, with support for automated chat responses. Tags: Python, Selenium, Automation
+
+## Featured in (press and mentions)
+
+- [x.com/nixcraft](https://x.com/nixcraft/status/1419969356243476483): Ported version of "screenfetch" from Linux
+- [rutube.ru](https://rutube.ru/video/6c6d483aa7006bef6770933a69300218/): Finding usernames across social networks using userrecon-win
+- [zscaler.com](https://www.zscaler.com/blogs/security-research/threat-actors-distribute-malicious-vpn-apps-masquerading-popular-vendors): Zscaler security research on threat actors distributing malicious VPN apps disguised as popular vendors
+- [codeby.net](https://codeby.net/threads/userrecon-poisk-pol-zovatelya-cherez-75-sotsial-nykh-setei.64923/): Forum thread discussing the userrecon script for finding usernames across social networks
+- [blast.hk](https://www.blast.hk/threads/208066/): Game hacking forum thread analyzing malware disguised as CS:GO/CS2 cheat cracks, and reverse engineering
+- [securityboulevard.com](https://securityboulevard.com/2021/05/threat-actors-distribute-malicious-vpn-apps-masquerading-as-popular-vendors/): VPN apps masquerading as popular vendors
+- [cyberforum.ru](https://www.cyberforum.ru/viruses/thread3150560.html): Cybersecurity forum thread about malware analysis, miner viruses and reverse engineering
+- [appspyfree.com](https://web.archive.org/web/20251017135911/https://appspyfree.com/facebook-hack/): Facebook hacking guide showing 5 methods including password guessing, phishing, keyloggers, and spy apps (Internet Archive snapshot)
+- [youtube.com/@FunnyToys-i6z](https://www.youtube.com/@FunnyToys-i6z/search?query=hXR16F): Game showcases
+- [llamalab.com](https://llamalab.com/automate/community/flows/52428): A fork of the "SMS to E-Mail" Automate flow that forwards incoming texts to a specified email address
+
+## Other external references mentioned on the site
+
+- [Zscaler](https://www.zscaler.com/): Security company whose researchers noticed the author's projects
+- [Security Boulevard](https://securityboulevard.com/): Security news site that covered the author's projects
+- [GitHub Arctic Code Vault](https://archiveprogram.github.com/arctic-vault/): GitHub archive program that preserved several of the author's repositories
+- [TryHackMe](https://tryhackme.com/): Cybersecurity training platform where the author ranks in the Top 1%
+- [Pix Programming Challenge](https://www.pixblocks.com/pixchallenge): Programming competition where the author was a 2020 semi-finalist on "Master" difficulty
