@@ -1,0 +1,204 @@
+@property --angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(110deg, transparent 30%, oklch(1 0 0 / 0.45) 50%, transparent 70%);
+    transform: translateX(-130%) skewX(-20deg);
+    pointer-events: none;
+}
+
+.btn:hover::after {
+    transform: translateX(130%) skewX(-20deg);
+    transition: transform 0.7s var(--ease-out);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0) scale(0.97);
+}
+
+.btn-outline::after {
+    background: linear-gradient(110deg, transparent 30%, oklch(0.8 0.115 295 / 0.25) 50%, transparent 70%);
+}
+
+.btn-outline:hover {
+    border-color: var(--accent-line);
+    background: var(--accent-soft);
+    box-shadow:
+        inset 0 1px 0 var(--highlight),
+        0 8px 24px -12px oklch(0.8 0.115 295 / 0.5);
+}
+
+@keyframes btn-breathe {
+    0%,
+    100% {
+        box-shadow:
+            inset 0 1px 0 oklch(1 0 0 / 0.35),
+            0 0 0 1px oklch(0.8 0.115 295 / 0.4),
+            0 6px 20px -6px oklch(0.8 0.115 295 / 0.45);
+    }
+
+    50% {
+        box-shadow:
+            inset 0 1px 0 oklch(1 0 0 / 0.35),
+            0 0 0 1px oklch(0.8 0.115 295 / 0.55),
+            0 8px 32px -4px oklch(0.8 0.115 295 / 0.7);
+    }
+}
+
+.hero .btn-solid,
+.cta .btn-solid {
+    animation: btn-breathe 3.2s ease-in-out infinite;
+}
+
+.hero .btn-solid:hover,
+.cta .btn-solid:hover {
+    animation: none;
+}
+
+.proj-card {
+    background:
+        linear-gradient(115deg, transparent 42%, oklch(1 0 0 / 0.07) 50%, transparent 58%) 130% 0 / 250% 100% no-repeat,
+        linear-gradient(180deg, oklch(1 0 0 / 0.03), transparent 40%),
+        var(--surface);
+    transition:
+        border-color var(--dur) var(--ease-out),
+        transform 0.4s var(--ease-out),
+        box-shadow 0.4s var(--ease-out);
+}
+
+.proj-card:is(:hover, :focus-visible) {
+    transform: translateY(-4px);
+    background-position:
+        -30% 0,
+        0 0,
+        0 0;
+    box-shadow:
+        inset 0 1px 0 var(--highlight),
+        0 18px 40px -20px oklch(0 0 0 / 0.85),
+        0 10px 36px -18px oklch(0.8 0.115 295 / 0.35);
+    transition:
+        border-color var(--dur) var(--ease-out),
+        transform 0.4s var(--ease-out),
+        box-shadow 0.4s var(--ease-out),
+        background-position 0.9s var(--ease-out);
+}
+
+.proj-card:active {
+    transform: translateY(-1px) scale(0.985);
+    transition-duration: 0.12s;
+}
+
+.proj-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: calc(var(--radius-l) - 1px);
+    padding: 1px;
+    background: conic-gradient(
+        from var(--angle),
+        transparent 0 50%,
+        oklch(0.8 0.115 295 / 0.35) 68%,
+        var(--accent) 84%,
+        var(--accent-hover) 90%,
+        transparent 96%
+    );
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask:
+        linear-gradient(#000 0 0) content-box exclude,
+        linear-gradient(#000 0 0);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s var(--ease-out);
+    animation: border-spin 4s linear infinite paused;
+}
+
+.proj-card:is(:hover, :focus-visible)::after {
+    opacity: 1;
+    animation-play-state: running;
+}
+
+@keyframes border-spin {
+    to {
+        --angle: 360deg;
+    }
+}
+
+.proj-icon {
+    transition:
+        color var(--dur) var(--ease-out),
+        border-color var(--dur) var(--ease-out),
+        background var(--dur) var(--ease-out),
+        transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.proj-card:is(:hover, :focus-visible) .proj-icon {
+    transform: scale(1.08) rotate(-5deg);
+    background: var(--accent-soft);
+}
+
+.proj-tag {
+    transition:
+        transform 0.3s var(--ease-out),
+        border-color var(--dur) var(--ease-out),
+        color var(--dur) var(--ease-out);
+}
+
+.proj-card:is(:hover, :focus-visible) .proj-tag {
+    border-color: var(--accent-line);
+    color: var(--fg);
+    transform: translateY(-2px);
+}
+
+.proj-card:is(:hover, :focus-visible) .proj-tag:nth-child(2) {
+    transition-delay: 40ms;
+}
+
+.proj-card:is(:hover, :focus-visible) .proj-tag:nth-child(3) {
+    transition-delay: 80ms;
+}
+
+.proj-card:is(:hover, :focus-visible) .proj-tag:nth-child(n + 4) {
+    transition-delay: 120ms;
+}
+
+@supports (animation-timeline: view()) {
+    @keyframes card-in {
+        from {
+            opacity: 0;
+            translate: 0 1.5rem;
+            scale: 0.97;
+        }
+
+        to {
+            opacity: 1;
+            translate: 0 0;
+            scale: 1;
+        }
+    }
+
+    .proj-card {
+        animation: card-in linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 35%;
+    }
+}

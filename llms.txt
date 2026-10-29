@@ -1,8 +1,8 @@
 # zaktabyte
 
-> Personal site of zaktabyte (also known as hXR16F), a tech enthusiast and self-taught hobbyist programmer and cybersecurity enthusiast from Poland. Focus areas: Python, automation, Linux, cybersecurity, homelab projects, self-hosted infrastructure, local AI, and open source. Site title: "zaktabyte — Hobbyist Programmer & Cybersecurity Enthusiast".
+> Personal site of zaktabyte (also known as hXR16F), a self-taught Software Engineer, DevOps Engineer and Penetration Tester based in Poland, and a tech enthusiast who has been programming since the age of 9. Focus areas: Python, Docker, Linux, automation, cybersecurity, homelab projects, self-hosted infrastructure, local AI, and open source. Site title: "zaktabyte — Personal Site". Social/Open Graph title: "zaktabyte — Software, DevOps & Cybersecurity Engineer".
 
-The site is a single page with these sections: Main, About, Stack, Projects, Mentions ("Featured In"). Footer: "Made with ❤ by zaktabyte".
+The site is a single page with these sections: Main, About, Stack, Projects, Mentions ("Featured In"), Contact ("Let's build something."). Footer: "Made with ❤ by zaktabyte".
 
 ## About the author
 
@@ -16,16 +16,26 @@ The site is a single page with these sections: Main, About, Stack, Projects, Men
 - Actively takes part in cybersecurity challenges on TryHackMe, ranked in the Top 1% globally.
 - Semi-finalist at the Pix Programming Challenge on "Master" difficulty in 2020.
 
+Highlights shown on the site: 200+ GitHub stars; Top 1% on TryHackMe; first code written at age 9; semi-finalist at the Pix Programming Challenge.
+
 ## Technology stack
 
 Items marked (favorite) are marked with a ❤ on the site.
 
 - Programming languages: Python (favorite), HTML, CSS, JavaScript, Batch (favorite), Bash, AutoIt, Lua, SQL
-- Environments, hardware, frameworks, libraries, tools: Linux (favorite), Windows, Proxmox, VirtualBox, Docker, Raspberry Pi (favorite), Arduino, ESP32, ESP8266, Mikr.us (favorite), Nginx, Cloudflare, Flask (favorite), FastAPI, Selenium, PyAutoGUI, PyQt6, Tkinter, Tailwind, Zed (favorite), Visual Studio Code, Tmux (favorite), LM Studio (favorite), N8n, Git, Regex, Cheat Engine, Nmap (favorite), Wireshark, Burp Suite (favorite), Metasploit, Aircrack-ng, Hashcat, John the Ripper, THC-Hydra
+- Environments, hardware, frameworks, libraries, tools:
+  - Operating systems and virtualization: Linux (favorite), Windows, Proxmox, VirtualBox
+  - DevOps and containers: Docker (favorite), Kubernetes, Jenkins, Git, Nginx, Cloudflare, Mikr.us (favorite)
+  - Backend and frameworks: Flask (favorite), FastAPI, Tailwind, Regex
+  - API tools: Postman, Apidog
+  - Desktop GUI and automation: PyQt6, Tkinter, Selenium, PyAutoGUI, N8n
+  - Hardware and IoT: Raspberry Pi (favorite), Arduino, ESP32, ESP8266
+  - Editors and workflow: Zed (favorite), Visual Studio Code, Tmux (favorite), LM Studio (favorite)
+  - Security and pentesting: Nmap (favorite), Wireshark, Burp Suite (favorite), Metasploit, Aircrack-ng, Hashcat, John the Ripper, THC-Hydra, Cheat Engine
 
 ## Site
 
-- [zaktabyte.dev](https://zaktabyte.dev/): Canonical single-page personal site (bio, stack, featured projects, mentions)
+- [zaktabyte.dev](https://zaktabyte.dev/): Canonical single-page personal site (bio, stack, featured projects, mentions, contact)
 
 ## Contact and profiles
 
@@ -40,8 +50,8 @@ Items marked (favorite) are marked with a ❤ on the site.
 
 - [1000420.xyz](https://1000420.xyz/): A playful digital experimentation platform offering a curated collection of interactive tools and mini-experiments to explore, tinker with, and enjoy. Tags: Python, Flask, API
 - [PocketRecon-AI](https://github.com/hXR16F/PocketRecon-AI): Lightweight MCP server that gives local LLMs AI-powered cybersecurity reconnaissance capabilities; runs on low-power devices like Raspberry Pi. Tags: Python, MCP, Cybersecurity
-- [AntiAV](https://github.com/hXR16F/AntiAV): A tool that makes any file undetectable by antivirus software using obfuscation techniques. Tags: Batch, Cybersecurity
 - [Stealth-Fingerprinter](https://github.com/hXR16F/stealth-fingerprinter): A sophisticated URL-based tracking system featuring bot detection, obfuscation capabilities and advanced endpoint management. Tags: Python, Flask
+- [AntiAV](https://github.com/hXR16F/AntiAV): A tool that makes any file undetectable by antivirus software using obfuscation techniques. Tags: Batch, Cybersecurity
 - [Progress-Bar](https://github.com/hXR16F/progress-bar): A fancy and customizable progress bar for batch scripts, with real-time visual feedback during execution and a completion summary when finished. Tags: Batch, Utility
 - [OmegleBOT](https://github.com/hXR16F/OmegleBOT): A Selenium-powered bot that automates Omegle interactions, with support for automated chat responses. Tags: Python, Selenium, Automation
 
